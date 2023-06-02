@@ -4,10 +4,10 @@
   "description": "A web-based pixlet implementation",
   "main": "",
   "scripts": {
-    "dev": "PIXLET_BINARY=pixlet IS_DEV=true netlify dev",
+    "dev": "SET PIXLET_BINARY=pixlet & SET IS_DEV=true & netlify dev",
     "lint": "eslint --ext .js ./",
-    "test": "PIXLET_BINARY=pixlet IS_DEV=true jest",
-    "test:watch": "PIXLET_BINARY=pixlet IS_DEV=true jest --watch",
+    "test": "SET PIXLET_BINARY=pixlet & SET IS_DEV=true & jest",
+    "test:watch": "SET PIXLET_BINARY=pixlet & SET IS_DEV=true & jest --watch",
     "test:ci": "jest"
   },
   "repository": {
