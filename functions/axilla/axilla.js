@@ -58,7 +58,7 @@ exports.handler = async (event) => {
   const appletUrl = params.applet
   const appletPath = appletUrl ? INPUT_APPLET_PATH : DEFAULT_APPLET_PATH
   const format = (params.format && FORMATS[params.format.toUpperCase()]) || FORMATS.WEBP
-  const output = OUTPUTS.IMAGE
+  const output = OUTPUTS.BASE64
   const cssClass = params.pixelate === 'false' ? '' : CSS_CLASSES.PIXETLATE
   const isVersionRequest = params.version === 'true'
 
